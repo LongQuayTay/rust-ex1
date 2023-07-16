@@ -71,7 +71,7 @@ fn find_max<T:Ord>(collection: &[T]) -> Option<&T> {
 // Reverse the elements in a collection
 // Make it compile 
 // Run tests 
-fn reverse_collection<T:Ord + Copy >(collection: &mut Vec<T>){
+fn reverse_collection<T: Copy >(collection: &mut Vec<T>){
     *collection = collection.iter().rev().map(|e: &T|{*e}).collect();
 }
 
